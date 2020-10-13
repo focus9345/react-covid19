@@ -1,0 +1,78 @@
+// Variable Overrides
+$body-bg: #000;
+$body-color: #D6D6D6;
+$theme-colors: (
+  "primary": #54EBAE,
+  "secondary":#3898EB,
+  "success": #C4EB28,
+  "danger": #EB3410,
+  "warning":#EB9B1C, 
+  "info":  #90ABF0,
+);
+
+
+// Importing Bootstrap and its default variables
+@import '~bootstrap/scss/bootstrap.scss';
+@import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@500&family=Rubik:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+
+// Typography
+body {
+    font-family: 'Fira Mono', monospace;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 5ex;
+    font-weight: 700;
+}
+h2 {
+    font-size: 4ex;
+    font-weight: 400;
+}
+h3 {
+    font-size: 3ex;
+    font-weight: 700;
+    font-style: italic;
+}
+h4 {
+    font-size: 3ex;
+    font-weight: 400;
+}
+h5 {
+    font-size: 2ex;
+    font-weight: 400;
+}
+h6 {
+    font-size: 1ex;
+    font-weight: 700;
+    font-style: italic;
+}
+
+p {
+    font-size: 1ex;
+    font-weight: 400;
+    line-height: 1.5ex;
+}
+ul {
+    font-size: 1ex;
+    font-weight: 400;
+    line-height: 1.2ex;
+}
+ol {
+    font-family: 'Fira Mono', monospace;
+    line-height: 1.2ex;
+    font-weight: 500;
+}
+caption {
+    font-family: 'Fira Mono', monospace;
+    line-height: 1.2ex;
+    font-weight: 500;
+}
+
+
+// Gutters and Spacing
+
+// Graphs and Data Display

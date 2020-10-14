@@ -1,0 +1,64 @@
+/*
+ * Covid19 API Data
+ * We collect daily changing data from api.covidtracking.com
+ * Images for this is collected from api.pexels.com
+ * This file will just collect data
+ */
+interface HttpResponse<T> extends Response {
+    parsedBody?: T;
+}
+// covid
+interface Covid {
+    date: number;
+    states: number;
+    positive: number;
+    negative: number;
+    pending: number;
+    hospitalizedCurrently: number;
+    hospitalizedCumulative: number;
+    inIcuCurrently: number;
+    inIcuCumulative: number;
+    onVentilatorCurrently: number;
+    onVentilatorCumulative: number;
+    recovered: number;
+    dateChecked: Date;
+    death: number;
+    hospitalized: number;
+    totalTestResults: number;
+    lastModified: Date;
+    total: number;
+    posNeg: number;
+    deathIncrease: number;
+    hospitalizedIncrease: number;
+    negativeIncrease: number;
+    positiveIncrease: number;
+    totalTestResultsIncrease: number;
+    hash: string;
+  }
+
+ export async function http<T>(
+    request: RequestInfo
+ ): Promise<HttpResponse<T>> {
+     const response: HttpResponse<T> = await fetch(
+         request
+     );
+     try {
+         response.parsedBody = await response.json();
+     } catch (ex) {}
+
+     if(!response.ok) {
+         throw new Error('Request: ' + response.statusText);
+     }
+     return response;
+ }
+
+ // Calling the covid data
+ let response: HttpResponse<Covid[]>;
+ try  {
+     response = await http<Covid[]>(
+         "https://api.covidtracking.com/v1/us/daily.json"
+     );
+     console.log("Response: ", response);
+ } catch (response) {
+     console.log("Error: ", response);
+ }

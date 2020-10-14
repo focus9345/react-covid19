@@ -16,7 +16,6 @@ $theme-colors: (
 @import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@500&family=Rubik:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 
-
 // Typography
 body {
     font-family: 'Fira Mono', monospace;
@@ -54,25 +53,50 @@ h6 {
 p {
     font-size: 1ex;
     font-weight: 400;
-    line-height: 1.5ex;
+    line-height: 3ex;
 }
 ul {
+    font-family: 'Fira Mono', monospace;
     font-size: 1ex;
-    font-weight: 400;
-    line-height: 1.2ex;
+    font-weight: 500;
+    line-height: 3ex;
 }
 ol {
     font-family: 'Fira Mono', monospace;
-    line-height: 1.2ex;
+    line-height: 3ex;
     font-weight: 500;
 }
 caption {
     font-family: 'Fira Mono', monospace;
-    line-height: 1.2ex;
+    line-height: 2ex;
     font-weight: 500;
 }
 
+// jumbotron customizations
+.jumbotron {
+    border-radius: 0;
+    min-height: 50vh;
+    background: url(./assets/pexels-chokniti-khongchum-2280549.jpg) no-repeat center center fixed;
+    background-size:cover;
+    .lead {
+        line-height: 2ex;
+    }
+}
 
 // Gutters and Spacing
 
 // Graphs and Data Display
+.col{
+    padding: 5ex;
+    .card {
+        border-radius: 1ex;
+        background: #242424;
+        .card-title {
+            text-align: center;
+            font-size: 3ex;
+        }
+        .card-text {
+            font-size: 1.2ex;
+        }
+    }
+}

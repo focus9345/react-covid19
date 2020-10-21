@@ -5,7 +5,7 @@ export interface Props {
 }
 
 const Item: React.FC<Props> = ({ data }) => {
-    const lastFiveDays : number = 2;
+    const lastFiveDays : number = 7;
     const smallArray = data.slice(0, lastFiveDays);
     return (
         <div className="row"> 
@@ -19,7 +19,7 @@ const Item: React.FC<Props> = ({ data }) => {
                     </div>
                     <ul className="list-group list-group-flush" >
                         { Object.entries(item).map(([keyCov, valueCov]) => (
-                            <li className="list-group-item text-dark" key={keyCov}> {keyCov} : {valueCov} </li>
+                            <li className="list-group-item text-primary" key={keyCov}> {keyCov} : {valueCov} </li>
                         ))}
                     </ul>
                 </div>

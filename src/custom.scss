@@ -51,7 +51,7 @@ h6 {
 }
 
 p {
-    font-size: 1ex;
+    font-size: 2ex;
     font-weight: 400;
     line-height: 3ex;
 }
@@ -122,4 +122,9 @@ html {
             background: #030303;
         }
     }
+}
+
+// Graphs and charts
+.center-graph{
+    margin: auto;
 }

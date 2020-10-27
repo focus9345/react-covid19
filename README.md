@@ -16,11 +16,11 @@ The app is still in the **development phase** and has about _65%_ completed.
 
 - [x] Setup Fetch to API Json using typescript
 - [x] Display seven days worth of results
-- [x] Setup a D3 Bargraph to display the last seven days worth of positive cases in the United Sttates
-- [] Setup a D3 pie graph of yesterdays negative, positive, us populattion
-- [] Set up a D3 line graph of new positive cases over the last seven days
-- [] Review Page Design for responsiveness, browser test
-- [] Test if data fails to load, display something to end users
+- [x] Setup a D3 Bargraph to display the last seven days worth of positive cases in the United States
+- [ ] Setup a D3 pie graph of yesterdays negative, positive, us population
+- [ ] Setup a D3 line graph of new positive cases over the last seven days
+- [ ] Review Page Design for responsiveness, browser test, lighthouse
+- [ ] Test if data fails to load, display something to end users
 
 
 

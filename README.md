@@ -2,6 +2,8 @@
 
 This web application intends to display changing report statistics on the covid 19 statistics. The app takes API reports from [covidtracking](https://api.covidtracking.com/v1/us/daily.json) and uses the d3.js library to display the statistics.
 
+[Live Demo](https://fetchcovidreact.herokuapp.com/)
+
 **The application uses the following technology:**
 * React 16.13
 * Typescript 3.7

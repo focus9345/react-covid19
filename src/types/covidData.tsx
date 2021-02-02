@@ -1,3 +1,9 @@
+/**
+ * Covid information  structure for any datapoint that needs to be rendered
+ * @param date Date (in milliseconds) the recording was taken at
+ * @param states TODO: josh add this
+ * @param positive: 
+ */
 export interface Covid {
     date: number;
     states: number;
